@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="10dp">
+
+    <PreferenceCategory android:title="General">
+
+        <Preference
+                android:summary="Tap here to rate this application on the play store. All feedback is appreciated."
+                android:title="Rate on the Play Store">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="https://play.google.com/store/apps/details?id=com.andrewq.simpleflashlight" />
+        </Preference>
+
+        <Preference
+                android:summary="Tap here to view other apps from this developer."
+                android:title="Other Apps">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="https://play.google.com/store/apps/developer?id=Andrew+Q" />
+        </Preference>
+
+        <Preference
+                android:summary="Tap here to donate to the developer."
+                android:title="Donate">
+            <intent android:action="android.intent.action.VIEW"
+                    android:data="https://play.google.com/store/apps/details?id=com.andrewq.donations" />
+        </Preference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Gestures (Coming Soon)">
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
